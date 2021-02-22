@@ -1,0 +1,27 @@
+.control {
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+.control > input,.control > select {
+    margin : 20px;
+    margin-top : 8px;
+    width : 300px;
+    font-size : 20px;
+}
+.control > label {
+    margin-top : 20px;
+}
+body, html {
+    margin : 0px;
+    padding : 0px;
+    color: white;
+}
+button {
+    width : 50%;
+    height : 30px;
+}

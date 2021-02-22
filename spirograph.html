@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>spirograph</title>
+    </head>
+    <body>
+        <canvas id="board"></canvas>
+        <link rel="stylesheet" href="main.css">
+        <style>
+            body {
+                margin : 0px;
+                overflow: hidden;
+            }
+            canvas {
+                background-color: black;
+            }
+        </style>
+        <div class="control">
+            <label data-title="R (bigger gear)">R (bigger gear) 200</label>
+            <input type="range" min="1" max="300" value="200" id="R" class="slider">
+            <label data-title="r (small gear)">r (small gear) 150</label>
+            <input type="range" min="1" max="300" value="150" id="r" class="slider">
+            <label data-title="a (position of hole)">a (position of hole) 150</label>
+            <input type="range" min="1" max="300" value="150" id="a" class="slider">
+            <label data-title="Color Increment">Color Increment 1</label>
+            <input type="range" min="1" max="5" value="1" step="1" id="colorIncrement" class="slider">
+            <label data-title="Time Increment">Time Increment 0.2</label>
+            <input type="range" min="0.1" max="3" value="0.2" step="0.1" id="timeIncrement" class="slider">
+            <label>Tracing Mode (Where the smaller gear is drawn)</label>
+            <select id="mode">
+                <option value="inside">Inside</option>
+                <option value="outside">Outside</option>
+            </select>
+            <button onclick="rerun()">redraw</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
