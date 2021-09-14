@@ -1,27 +1,65 @@
+body {
+    margin: 0px;
+    background: black;
+    overflow: hidden;
+}
+
+#board {
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+#gearboard {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 .control {
-    position : absolute;
-    top : 0px;
-    left : 0px;
+    position: absolute;
+    top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     place-items: center;
+    margin-bottom: 20px;
 }
-.control > input,.control > select {
-    margin : 20px;
-    margin-top : 8px;
-    width : 300px;
-    font-size : 20px;
+
+.right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 20px;
 }
-.control > label {
-    margin-top : 20px;
+
+.control>input,
+.control>select,
+.right>input {
+    margin: 20px;
+    margin-top: 8px;
+    width: 300px;
+    font-size: 20px;
 }
-body, html {
-    margin : 0px;
-    padding : 0px;
+
+.right>label {
+    margin-top: 20px;
+}
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
     color: white;
 }
+
 button {
-    width : 50%;
-    height : 30px;
+    width: 50%;
+    height: 30px;
 }
